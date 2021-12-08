@@ -26,7 +26,7 @@
 
             <label>
                 Converter <b>para</b>
-                <select>
+                <select id="select">
                     <option>
                         US$ Dólar americano
                     </option>
@@ -38,28 +38,32 @@
 
             <label>
                 Valor
-                <input placeholder="R$ 10.000,00">
+                <input id="input-real" placeholder="R$ 10.000,00">
             </label>
 
-            <button type="button">Coverter</button>
+            <button id="converte-botao" type="button">Coverter</button>
 
             <section>
                 <div>
                     <img src="./assets//brasil 2.svg" alt="brazil">
-                    <p>Real</p>
-                    <p>R$ 10.000,00</p>
+                    <p class="moeda">Real</p>
+                    <p  id="real-value-text" class="valor">R$ 10.000,00</p>
                 </div>
                 
                 <img src="./assets/arrow.svg" alt="">
 
                 <div>
-                    <img src="./assets//USA.svg" alt="USA">
-                    <p>Dólar americano</p>
-                    <p>US$ 10.000,00</p>
+                    <img src="./assets//dollar.svg" alt="USA" 
+                    id="currency-img"
+                    >
+                    <p id="currency-name" class="moeda">Dólar americano</p>
+                    <p id="dollar-value-text" class="valor">US$ 10.000,00</p>
                 </div>
             </section>
         </main>
 
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
